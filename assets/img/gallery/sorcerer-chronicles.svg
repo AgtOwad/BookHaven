@@ -1,0 +1,12 @@
+<svg width="280" height="360" viewBox="0 0 280 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Sorcerer's Shadowed Chronicles book cover</title>
+  <desc id="desc">Fantasy book cover with moon and arcane symbols.</desc>
+  <rect width="280" height="360" rx="18" fill="#2E4057"/>
+  <rect x="40" y="52" width="200" height="288" rx="16" fill="#EE583F" opacity="0.25"/>
+  <circle cx="140" cy="168" r="68" fill="#C7B65E" opacity="0.85"/>
+  <path d="M104 184 Q140 108 176 184" fill="none" stroke="#2E4057" stroke-width="6" stroke-linecap="round"/>
+  <path d="M112 208 Q140 164 168 208" fill="none" stroke="#2E4057" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="140" cy="168" r="18" fill="#2E4057"/>
+  <text x="60" y="276" font-family="Arial" font-weight="700" font-size="28" fill="#FFF7EE">Sorcerer's</text>
+  <text x="60" y="310" font-family="Arial" font-weight="700" font-size="28" fill="#FFF7EE">Chronicles</text>
+</svg>

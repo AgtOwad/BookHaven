@@ -1,0 +1,11 @@
+<svg width="280" height="360" viewBox="0 0 280 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Glory Riders book cover</title>
+  <desc id="desc">Western adventure book cover with silhouettes of riders.</desc>
+  <rect width="280" height="360" rx="18" fill="#2E4057"/>
+  <rect x="32" y="48" width="216" height="272" rx="14" fill="#EE583F" opacity="0.2"/>
+  <path d="M48 252 C74 228 110 216 140 216 C170 216 206 228 232 252 L232 296 L48 296 Z" fill="#C7B65E"/>
+  <path d="M76 246 L92 218 L116 236 L132 212 L152 232 L172 206 L196 236 L216 218 L228 246" stroke="#2E4057" stroke-width="8" stroke-linecap="round" fill="none"/>
+  <text x="56" y="124" font-family="Arial" font-weight="700" font-size="44" fill="#FFF7EE">Glory</text>
+  <text x="56" y="168" font-family="Arial" font-weight="700" font-size="44" fill="#FFF7EE">Riders</text>
+  <text x="56" y="206" font-family="Comfortaa" font-size="18" fill="#FFF7EE" opacity="0.85">A frontier legend</text>
+</svg>
