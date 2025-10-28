@@ -1,0 +1,12 @@
+<svg width="280" height="360" viewBox="0 0 280 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Book Haven notebook</title>
+  <desc id="desc">Notebook cover with elastic band and bookmark.</desc>
+  <rect width="280" height="360" rx="18" fill="#FFFFFF" stroke="#2E4057" stroke-width="6"/>
+  <rect x="72" y="44" width="136" height="272" rx="18" fill="#FFF7EE" stroke="#2E4057" stroke-width="6"/>
+  <rect x="200" y="44" width="12" height="272" fill="#C7B65E"/>
+  <rect x="88" y="100" width="104" height="24" rx="6" fill="#C7B65E" opacity="0.8"/>
+  <text x="100" y="118" font-family="Comfortaa" font-size="14" font-weight="700" fill="#2E4057">Book Haven</text>
+  <rect x="96" y="208" width="88" height="12" rx="6" fill="#EE583F" opacity="0.6"/>
+  <rect x="112" y="240" width="56" height="8" rx="4" fill="#2E4057" opacity="0.7"/>
+  <path d="M88 44 L88 12" stroke="#EE583F" stroke-width="6" stroke-linecap="round"/>
+</svg>

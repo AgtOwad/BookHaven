@@ -1,0 +1,22 @@
+<svg width="280" height="360" viewBox="0 0 280 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Reading sticker pack</title>
+  <desc id="desc">Illustration of four reading-themed stickers.</desc>
+  <rect width="280" height="360" rx="18" fill="#FFFFFF" stroke="#2E4057" stroke-width="6"/>
+  <rect x="36" y="60" width="208" height="264" rx="18" fill="#FFF7EE"/>
+  <g transform="translate(60 96)">
+    <circle cx="46" cy="44" r="40" fill="#2E4057" opacity="0.15"/>
+    <text x="12" y="52" font-family="Comfortaa" font-size="20" fill="#2E4057">Read</text>
+  </g>
+  <g transform="translate(132 92)">
+    <rect x="0" y="0" width="96" height="80" rx="16" fill="#EE583F" opacity="0.2"/>
+    <text x="12" y="48" font-family="Comfortaa" font-size="20" fill="#2E4057">Book</text>
+  </g>
+  <g transform="translate(60 192)">
+    <rect x="0" y="0" width="96" height="72" rx="16" fill="#C7B65E" opacity="0.3"/>
+    <text x="16" y="44" font-family="Comfortaa" font-size="20" fill="#2E4057">Nerd</text>
+  </g>
+  <g transform="translate(140 200)">
+    <circle cx="46" cy="36" r="36" fill="#2E4057" opacity="0.15"/>
+    <text x="8" y="44" font-family="Comfortaa" font-size="20" fill="#2E4057">Love</text>
+  </g>
+</svg>

@@ -1,0 +1,11 @@
+<svg width="280" height="360" viewBox="0 0 280 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">TRAVEL magazine cover</title>
+  <desc id="desc">Stylized blue travel magazine cover with illustrated mountains and sun.</desc>
+  <rect width="280" height="360" rx="18" fill="#FFFFFF" stroke="#2E4057" stroke-width="6"/>
+  <rect x="24" y="48" width="232" height="288" rx="12" fill="#EE583F" opacity="0.12"/>
+  <path d="M36 242 L92 188 L146 230 L194 176 L244 220 L244 308 L36 308 Z" fill="#2E4057" opacity="0.15"/>
+  <path d="M52 238 L96 198 L134 232 L176 186 L228 236 L228 292 L52 292 Z" fill="#2E4057" opacity="0.35"/>
+  <circle cx="208" cy="170" r="22" fill="#C7B65E"/>
+  <text x="48" y="116" font-family="Arial" font-weight="700" font-size="48" fill="#2E4057">TRAVEL</text>
+  <text x="48" y="156" font-family="Comfortaa" font-size="18" fill="#2E4057">Global journeys &amp; guides</text>
+</svg>

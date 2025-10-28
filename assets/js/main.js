@@ -27,9 +27,11 @@
     var isOpen = mobileDrawer.classList.contains("open");
     if (isOpen) {
       mobileDrawer.classList.remove("open");
+      mobileDrawer.setAttribute("aria-hidden", "true");
       if (mobileToggle) mobileToggle.setAttribute("aria-expanded", "false");
     } else {
       mobileDrawer.classList.add("open");
+      mobileDrawer.setAttribute("aria-hidden", "false");
       if (mobileToggle) mobileToggle.setAttribute("aria-expanded", "true");
     }
   }
@@ -41,7 +43,7 @@
   // Close mobile drawer if user clicks a nav link
   if (mobileDrawer) {
     mobileDrawer.addEventListener("click", function (e) {
-      if (e.target.matches("a")) {
+      if (mobileDrawer.classList.contains("open") && e.target.matches("a")) {
         toggleMobileNav();
       }
     });
@@ -87,7 +89,7 @@
   }
 
   function updateCartBadge() {
-    var badgeEls = qsa("#cart-count");
+    var badgeEls = qsa(".js-cart-count");
     var cart = loadCart();
     var totalQty = cartTotalQty(cart);
     badgeEls.forEach(function (b) {
@@ -145,7 +147,7 @@
 
   // ---------- CART MODAL OPEN/CLOSE ----------
   var cartModal = qs("#cart-modal");
-  var openCartBtn = qsa("#openCartBtn, .drawer-cart-btn");
+  var openCartBtn = qsa(".js-open-cart");
   var closeCartBtn = qs("#closeCartBtn");
   var clearCartBtn = qs("#clearCartBtn");
   var processOrderBtn = qs("#processOrderBtn");
@@ -198,6 +200,9 @@
       }
       if (eventModal && !eventModal.classList.contains("hidden")) {
         closeEventModal();
+      }
+      if (mobileDrawer && mobileDrawer.classList.contains("open")) {
+        toggleMobileNav();
       }
     }
   });
