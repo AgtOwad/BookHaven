@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Book Haven Bookstore – About Us</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body>
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="index.html">
+      <img src="assets/img/logo.svg" alt="Book Haven Bookstore logo" class="brand__logo" />
+      <span class="brand__name">Book Haven Bookstore</span>
+    </a>
+
+    <button
+      class="mobile-menu-toggle"
+      id="mobileMenuToggle"
+      aria-label="Toggle navigation menu"
+      aria-expanded="false">
+      <span class="bar"></span>
+    </button>
+
+    <div class="main-nav">
+      <ul class="nav-links" id="desktopNav">
+        <li><a href="index.html" class="">Home</a></li>
+          <li><a href="gallery.html" class="">Gallery</a></li>
+          <li><a href="about.html" class="active">About Us</a></li>
+          <li><a href="community.html" class="">Community & Events</a></li>
+      </ul>
+
+      <button
+        class="cart-button"
+        id="openCartBtn"
+        aria-haspopup="dialog"
+        aria-controls="cart-modal">
+        <span class="cart-button__icon" aria-hidden="true">🛒</span>
+        <span class="cart-button__label">View Cart</span>
+        <span class="cart-button__badge" id="cart-count" aria-live="polite">0</span>
+      </button>
+    </div>
+
+    <div class="mobile-drawer" id="mobileNav" hidden>
+      <nav role="navigation" aria-label="Mobile Navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="community.html">Community & Events</a></li>
+        </ul>
+      </nav>
+      <button
+        class="drawer-cart-btn"
+        id="openCartBtn"
+        aria-haspopup="dialog"
+        aria-controls="cart-modal">
+        🛒 View Cart
+        <span class="cart-button__badge" id="cart-count" aria-live="polite">0</span>
+      </button>
+    </div>
+  </div>
+</header>
+<main id="main-content">
+  <section class="section">
+    <div class="container">
+      <div class="about-layout">
+        <!-- About / Story -->
+        <div>
+          <article class="about-card" aria-labelledby="about-heading">
+            <header class="section-heading">
+              <h1 id="about-heading" class="h1">About Book Haven Bookstore</h1>
+            </header>
+            <p class="body-text">
+              Book Haven Bookstore is a local treasure for book enthusiasts,
+              offering a cozy space for readers, students, and lifelong learners.
+              We believe in the power of reading, the joy of journaling,
+              and the importance of community.
+            </p>
+            <p class="body-text">
+              Step inside and you’ll find more than shelves — you’ll find
+              conversation, discovery, and a team that loves matching people
+              with the right story, tool, or notebook.
+            </p>
+          </article>
+
+          <!-- Feedback / Custom Order Form -->
+          <section class="form-card" aria-labelledby="feedback-heading">
+            <header class="section-heading">
+              <h2 id="feedback-heading" class="h2">Ask Us / Request a Custom Order</h2>
+            </header>
+            <form id="feedback-form" novalidate>
+              <div class="form-field">
+                <label for="fb-name">Name <span aria-hidden="true" style="color:#c00">*</span></label>
+                <input id="fb-name" name="name" type="text" required aria-required="true" />
+              </div>
+
+              <div class="form-field">
+                <label for="fb-contact">Email or Phone <span aria-hidden="true" style="color:#c00">*</span></label>
+                <input id="fb-contact" name="contact" type="text" required aria-required="true" />
+              </div>
+
+              <div class="form-field">
+                <label for="fb-message">What are you looking for? <span aria-hidden="true" style="color:#c00">*</span></label>
+                <textarea id="fb-message" name="message" rows="4" required aria-required="true"></textarea>
+              </div>
+
+              <button class="btn" type="submit">Send Request</button>
+
+              <div id="feedback-success" class="form-success hidden" role="status">
+                Thanks! We got your request.
+              </div>
+            </form>
+          </section>
+        </div>
+
+        <!-- Hours / Info Sidebar -->
+        <aside class="hours-card" aria-labelledby="hours-heading">
+          <h2 id="hours-heading" class="h2">Hours of Operation</h2>
+          <table class="hours-table" aria-describedby="hours-heading">
+            <tr>
+              <th scope="row">Mon–Fri</th>
+              <td>9 a.m. – 8 p.m.</td>
+            </tr>
+            <tr>
+              <th scope="row">Saturday</th>
+              <td>10 a.m. – 6 p.m.</td>
+            </tr>
+            <tr>
+              <th scope="row">Sunday</th>
+              <td>11 a.m. – 5 p.m.</td>
+            </tr>
+          </table>
+          <p class="body-text" style="margin-top:1rem;">
+            Questions about availability? Want us to hold a book?
+            Drop us a note — we love special requests.
+          </p>
+        </aside>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-inner">
+
+    <div class="footer-col">
+      <div class="footer-col-title">Stay in touch</div>
+      <form id="newsletter-form" class="newsletter-form" novalidate>
+        <label class="visually-hidden" for="newsletter-email">Email address</label>
+        <input
+          id="newsletter-email"
+          name="email"
+          type="email"
+          placeholder="Your email"
+          required
+          aria-required="true"
+        />
+        <button class="btn" type="submit">Subscribe</button>
+      </form>
+      <p class="footer-text" style="margin-top:0.75rem;">
+        We'll let you know about new arrivals, local events, and special offers.
+      </p>
+    </div>
+
+    <div class="footer-col">
+      <div class="footer-col-title">Visit us</div>
+      <p class="footer-text">
+        Book Haven Bookstore<br/>
+        123 Literary Lane<br/>
+        Readsville, USA<br/>
+        Mon–Fri 9 a.m.–8 p.m.
+      </p>
+      <p class="footer-text">
+        Call: (555) 123‑BOOK
+      </p>
+      <p class="footer-text">
+        Instagram / Facebook / X
+      </p>
+    </div>
+
+    <div class="footer-col">
+      <div class="footer-col-title">Browse</div>
+      <ul class="footer-nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="community.html">Community &amp; Events</a></li>
+      </ul>
+      <p class="footer-text" style="margin-top:1rem;font-size:0.8rem;">
+        © 2025 Book Haven Bookstore. All rights reserved.
+      </p>
+    </div>
+
+  </div>
+</footer>
+
+<!-- Cart Modal -->
+<div
+  id="cart-modal"
+  class="modal hidden"
+  aria-hidden="true"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="cart-title">
+  <div class="modal__backdrop" data-close="cart"></div>
+  <div class="modal__panel">
+    <div class="modal__header">
+      <h2 id="cart-title">Your Cart</h2>
+      <button class="modal__close" id="closeCartBtn" aria-label="Close cart">&times;</button>
+    </div>
+    <div class="modal__body" id="cart-items">
+      <!-- JS will render the cart table here -->
+      <p>Your cart is empty.</p>
+    </div>
+    <div class="modal__footer">
+      <button class="btn-outline btn" id="clearCartBtn" type="button">Clear Cart</button>
+      <button class="btn" id="processOrderBtn" type="button">Process Order</button>
+    </div>
+  </div>
+</div>
+<div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

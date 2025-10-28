@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 48 48" role="img" aria-label="Book Haven Bookstore logo">
+  <rect x="4" y="10" width="18" height="28" rx="4" fill="#2E4057"/>
+  <rect x="26" y="10" width="18" height="28" rx="4" fill="#C7B65E"/>
+  <path d="M8 16h10M8 20h10M8 24h10M8 28h10" stroke="#FFF7EE" stroke-width="2" stroke-linecap="round"/>
+  <path d="M30 16h10M30 20h10M30 24h10M30 28h10" stroke="#131C26" stroke-width="2" stroke-linecap="round"/>
+</svg>

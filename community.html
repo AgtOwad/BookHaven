@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Book Haven Bookstore – Community & Events</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body>
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="index.html">
+      <img src="assets/img/logo.svg" alt="Book Haven Bookstore logo" class="brand__logo" />
+      <span class="brand__name">Book Haven Bookstore</span>
+    </a>
+
+    <button
+      class="mobile-menu-toggle"
+      id="mobileMenuToggle"
+      aria-label="Toggle navigation menu"
+      aria-expanded="false">
+      <span class="bar"></span>
+    </button>
+
+    <div class="main-nav">
+      <ul class="nav-links" id="desktopNav">
+        <li><a href="index.html" class="">Home</a></li>
+          <li><a href="gallery.html" class="">Gallery</a></li>
+          <li><a href="about.html" class="">About Us</a></li>
+          <li><a href="community.html" class="active">Community & Events</a></li>
+      </ul>
+
+      <button
+        class="cart-button"
+        id="openCartBtn"
+        aria-haspopup="dialog"
+        aria-controls="cart-modal">
+        <span class="cart-button__icon" aria-hidden="true">🛒</span>
+        <span class="cart-button__label">View Cart</span>
+        <span class="cart-button__badge" id="cart-count" aria-live="polite">0</span>
+      </button>
+    </div>
+
+    <div class="mobile-drawer" id="mobileNav" hidden>
+      <nav role="navigation" aria-label="Mobile Navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="community.html">Community & Events</a></li>
+        </ul>
+      </nav>
+      <button
+        class="drawer-cart-btn"
+        id="openCartBtn"
+        aria-haspopup="dialog"
+        aria-controls="cart-modal">
+        🛒 View Cart
+        <span class="cart-button__badge" id="cart-count" aria-live="polite">0</span>
+      </button>
+    </div>
+  </div>
+</header>
+<main id="main-content">
+  <section class="section">
+    <div class="container">
+      <header class="section-heading">
+        <h1 class="h1">Community &amp; Events</h1>
+      </header>
+      <p class="body-text">
+        Book Haven isn’t just a store — it’s a hub for readers, students,
+        and neighbors. Here’s how we stay connected.
+      </p>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section section--bordered" aria-labelledby="testimonials-heading">
+    <div class="container">
+      <h2 id="testimonials-heading" class="h2">What our readers say</h2>
+      <div class="testimonials-grid">
+        <blockquote class="testimonial-card">
+          “I found a book here I couldn’t find anywhere else. They even
+          recommended two similar authors. Obsessed.”
+          <div class="caption" style="margin-top:0.5rem;">— Mira, regular</div>
+        </blockquote>
+
+        <blockquote class="testimonial-card">
+          “This place is dangerous for stationery lovers. I only came for
+          one notebook and left with four.”
+          <div class="caption" style="margin-top:0.5rem;">— Jay</div>
+        </blockquote>
+
+        <blockquote class="testimonial-card">
+          “The staff actually listens. They knew exactly what my kid
+          would like to read next.”
+          <div class="caption" style="margin-top:0.5rem;">— Lena, parent</div>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- Community Involvement -->
+  <section class="section" aria-labelledby="community-heading">
+    <div class="container">
+      <h2 id="community-heading" class="h2">In the community</h2>
+      <div class="community-grid">
+        <div class="community-card">
+          <p class="body-strong">School supply drives</p>
+          <p class="body-text">
+            We collect notebooks and study supplies for local students at
+            the start of every term.
+          </p>
+        </div>
+
+        <div class="community-card">
+          <p class="body-strong">Book clubs &amp; meetups</p>
+          <p class="body-text">
+            Monthly themed book circles for fantasy, romance,
+            and non-fiction lovers.
+          </p>
+        </div>
+
+        <div class="community-card">
+          <p class="body-strong">Student study nights</p>
+          <p class="body-text">
+            Quiet tables, free tea, and zero judgment during finals week.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Events & Collaborations -->
+  <section class="section section--bordered" aria-labelledby="events-heading">
+    <div class="container">
+      <h2 id="events-heading" class="h2">Upcoming Events</h2>
+      <div class="events-grid">
+        <article class="event-card">
+          <div class="event-card__date">Nov 2 • 5 PM</div>
+          <h3 class="h2" style="font-size:1.1rem;">Author Meet &amp; Greet</h3>
+          <p class="body-text">
+            Q&amp;A and signing with a local fantasy author.
+          </p>
+          <button
+            class="btn open-event-modal"
+            data-event="Author Meet & Greet"
+            type="button">
+            Ask About This Event
+          </button>
+        </article>
+
+        <article class="event-card">
+          <div class="event-card__date">Nov 9 • 6 PM</div>
+          <h3 class="h2" style="font-size:1.1rem;">Book Club Night</h3>
+          <p class="body-text">
+            This month’s pick: “Sorcerer’s Shadowed Chronicles”.
+          </p>
+          <button
+            class="btn open-event-modal"
+            data-event="Book Club Night"
+            type="button">
+            Ask About This Event
+          </button>
+        </article>
+
+        <article class="event-card">
+          <div class="event-card__date">Nov 16 • 4 PM</div>
+          <h3 class="h2" style="font-size:1.1rem;">Back-to-School Prep</h3>
+          <p class="body-text">
+            Journals, study planners, and productivity tips.
+          </p>
+          <button
+            class="btn open-event-modal"
+            data-event="Back-to-School Prep"
+            type="button">
+            Ask About This Event
+          </button>
+        </article>
+      </div>
+
+      <p class="body-text" style="margin-top:1rem;">
+        Want to host a reading, workshop, or pop-up? Reach out — we love collabs.
+      </p>
+    </div>
+  </section>
+</main>
+
+<!-- Event Inquiry Modal -->
+<div
+  id="event-modal"
+  class="modal hidden"
+  aria-hidden="true"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="event-form-title">
+  <div class="modal__backdrop"></div>
+  <div class="modal__panel">
+    <div class="modal__header">
+      <h2 id="event-form-title">Event Inquiry</h2>
+      <button class="modal__close" id="closeEventBtn" aria-label="Close event form">&times;</button>
+    </div>
+    <div class="modal__body" id="event-details">
+      <form id="event-form" novalidate>
+        <input type="hidden" id="event-name-hidden" name="eventTitle" value="Event Inquiry" />
+        <div class="form-field">
+          <label for="ev-name">Name <span aria-hidden="true" style="color:#c00">*</span></label>
+          <input id="ev-name" name="name" type="text" required aria-required="true" />
+        </div>
+        <div class="form-field">
+          <label for="ev-contact">Email or Phone <span aria-hidden="true" style="color:#c00">*</span></label>
+          <input id="ev-contact" name="contact" type="text" required aria-required="true" />
+        </div>
+        <div class="form-field">
+          <label for="ev-message">Your question <span aria-hidden="true" style="color:#c00">*</span></label>
+          <textarea id="ev-message" name="message" rows="4" required aria-required="true"></textarea>
+        </div>
+        <button class="btn" type="submit">Send</button>
+      </form>
+    </div>
+    <div class="modal__footer" style="justify-content:flex-start;">
+      <p class="caption">We’ll reply using the contact info you provide.</p>
+    </div>
+  </div>
+</div>
+<footer class="site-footer">
+  <div class="container footer-inner">
+
+    <div class="footer-col">
+      <div class="footer-col-title">Stay in touch</div>
+      <form id="newsletter-form" class="newsletter-form" novalidate>
+        <label class="visually-hidden" for="newsletter-email">Email address</label>
+        <input
+          id="newsletter-email"
+          name="email"
+          type="email"
+          placeholder="Your email"
+          required
+          aria-required="true"
+        />
+        <button class="btn" type="submit">Subscribe</button>
+      </form>
+      <p class="footer-text" style="margin-top:0.75rem;">
+        We'll let you know about new arrivals, local events, and special offers.
+      </p>
+    </div>
+
+    <div class="footer-col">
+      <div class="footer-col-title">Visit us</div>
+      <p class="footer-text">
+        Book Haven Bookstore<br/>
+        123 Literary Lane<br/>
+        Readsville, USA<br/>
+        Mon–Fri 9 a.m.–8 p.m.
+      </p>
+      <p class="footer-text">
+        Call: (555) 123‑BOOK
+      </p>
+      <p class="footer-text">
+        Instagram / Facebook / X
+      </p>
+    </div>
+
+    <div class="footer-col">
+      <div class="footer-col-title">Browse</div>
+      <ul class="footer-nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="community.html">Community &amp; Events</a></li>
+      </ul>
+      <p class="footer-text" style="margin-top:1rem;font-size:0.8rem;">
+        © 2025 Book Haven Bookstore. All rights reserved.
+      </p>
+    </div>
+
+  </div>
+</footer>
+
+<!-- Cart Modal -->
+<div
+  id="cart-modal"
+  class="modal hidden"
+  aria-hidden="true"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="cart-title">
+  <div class="modal__backdrop" data-close="cart"></div>
+  <div class="modal__panel">
+    <div class="modal__header">
+      <h2 id="cart-title">Your Cart</h2>
+      <button class="modal__close" id="closeCartBtn" aria-label="Close cart">&times;</button>
+    </div>
+    <div class="modal__body" id="cart-items">
+      <!-- JS will render the cart table here -->
+      <p>Your cart is empty.</p>
+    </div>
+    <div class="modal__footer">
+      <button class="btn-outline btn" id="clearCartBtn" type="button">Clear Cart</button>
+      <button class="btn" id="processOrderBtn" type="button">Process Order</button>
+    </div>
+  </div>
+</div>
+<div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Book Haven Bookstore – Gallery</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body>
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="index.html">
+      <img src="assets/img/logo.svg" alt="Book Haven Bookstore logo" class="brand__logo" />
+      <span class="brand__name">Book Haven Bookstore</span>
+    </a>
+
+    <button
+      class="mobile-menu-toggle"
+      id="mobileMenuToggle"
+      aria-label="Toggle navigation menu"
+      aria-expanded="false">
+      <span class="bar"></span>
+    </button>
+
+    <div class="main-nav">
+      <ul class="nav-links" id="desktopNav">
+        <li><a href="index.html" class="">Home</a></li>
+          <li><a href="gallery.html" class="active">Gallery</a></li>
+          <li><a href="about.html" class="">About Us</a></li>
+          <li><a href="community.html" class="">Community & Events</a></li>
+      </ul>
+
+      <button
+        class="cart-button"
+        id="openCartBtn"
+        aria-haspopup="dialog"
+        aria-controls="cart-modal">
+        <span class="cart-button__icon" aria-hidden="true">🛒</span>
+        <span class="cart-button__label">View Cart</span>
+        <span class="cart-button__badge" id="cart-count" aria-live="polite">0</span>
+      </button>
+    </div>
+
+    <div class="mobile-drawer" id="mobileNav" hidden>
+      <nav role="navigation" aria-label="Mobile Navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="community.html">Community & Events</a></li>
+        </ul>
+      </nav>
+      <button
+        class="drawer-cart-btn"
+        id="openCartBtn"
+        aria-haspopup="dialog"
+        aria-controls="cart-modal">
+        🛒 View Cart
+        <span class="cart-button__badge" id="cart-count" aria-live="polite">0</span>
+      </button>
+    </div>
+  </div>
+</header>
+<main id="main-content">
+  <section class="section">
+    <div class="container">
+      <div class="gallery-header-row">
+        <h1 class="h1">Gallery</h1>
+        <button
+          class="cart-button"
+          id="openCartBtn"
+          aria-haspopup="dialog"
+          aria-controls="cart-modal">
+          <span class="cart-button__icon" aria-hidden="true">🛒</span>
+          <span class="cart-button__label">View Cart</span>
+          <span class="cart-button__badge" id="cart-count" aria-live="polite">0</span>
+        </button>
+      </div>
+
+      <div class="gallery-grid">
+        <!-- Magazines -->
+        <div class="product-card" id="magazines">
+          <div class="product-card__img">
+            <img src="assets/img/placeholder.svg" alt="Travel magazine cover titled 'TRAVEL'." style="max-width:100%;height:auto;border-radius:inherit;" />
+          </div>
+          <div class="price-badge">$6.99</div>
+          <div class="product-card__title">TRAVEL Magazine</div>
+          <div class="product-card__desc">
+            Global adventures, destinations, and culture.
+          </div>
+          <button class="btn-add-cart btn" data-add-to-cart data-id="travel-mag" data-name="TRAVEL Magazine" data-price="6.99" type="button">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card__img">
+            <img src="assets/img/placeholder.svg" alt="Food magazine cover titled 'EAT.'." style="max-width:100%;height:auto;border-radius:inherit;" />
+          </div>
+          <div class="price-badge">$5.99</div>
+          <div class="product-card__title">EAT. Magazine</div>
+          <div class="product-card__desc">
+            Bold recipes, street food, and kitchen stories.
+          </div>
+          <button class="btn-add-cart btn" data-add-to-cart data-id="eat-mag" data-name="EAT. Magazine" data-price="5.99" type="button">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card__img">
+            <img src="assets/img/placeholder.svg" alt="Sports magazine cover titled 'BALL'." style="max-width:100%;height:auto;border-radius:inherit;" />
+          </div>
+          <div class="price-badge">$5.50</div>
+          <div class="product-card__title">BALL Magazine</div>
+          <div class="product-card__desc">
+            Sports, hustle, and behind-the-scenes grit.
+          </div>
+          <button class="btn-add-cart btn" data-add-to-cart data-id="ball-mag" data-name="BALL Magazine" data-price="5.50" type="button">Add to Cart</button>
+        </div>
+
+        <!-- Books -->
+        <div class="product-card" id="books">
+          <div class="product-card__img">
+            <img src="assets/img/placeholder.svg" alt="Cover art for Brie Mine 4Ever." style="max-width:100%;height:auto;border-radius:inherit;" />
+          </div>
+          <div class="price-badge">$14.99</div>
+          <div class="product-card__title">Brie Mine 4Ever</div>
+          <div class="product-card__desc">
+            A funny, feel-good romance.
+          </div>
+          <button class="btn-add-cart btn" data-add-to-cart data-id="brie-mine" data-name="Brie Mine 4Ever" data-price="14.99" type="button">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card__img">
+            <img src="assets/img/placeholder.svg" alt="Cover art for Glory Riders." style="max-width:100%;height:auto;border-radius:inherit;" />
+          </div>
+          <div class="price-badge">$12.50</div>
+          <div class="product-card__title">Glory Riders</div>
+          <div class="product-card__desc">
+            Western action and outlaw drama.
+          </div>
+          <button class="btn-add-cart btn" data-add-to-cart data-id="glory-riders" data-name="Glory Riders" data-price="12.50" type="button">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card__img">
+            <img src="assets/img/placeholder.svg" alt="Cover art for Sorcerer’s Shadowed Chronicles." style="max-width:100%;height:auto;border-radius:inherit;" />
+          </div>
+          <div class="price-badge">$16.00</div>
+          <div class="product-card__title">Sorcerer’s Shadowed Chronicles</div>
+          <div class="product-card__desc">
+            Dark magic, fate, and rebellion.
+          </div>
+          <button class="btn-add-cart btn" data-add-to-cart data-id="sorcerer-chronicles" data-name="Sorcerer’s Shadowed Chronicles" data-price="16.00" type="button">Add to Cart</button>
+        </div>
+
+        <!-- Journals / Supplies -->
+        <div class="product-card" id="journals">
+          <div class="product-card__img">
+            <img src="assets/img/placeholder.svg" alt="Reading-themed stickers set." style="max-width:100%;height:auto;border-radius:inherit;" />
+          </div>
+          <div class="price-badge">$4.99</div>
+          <div class="product-card__title">Reading Sticker Pack</div>
+          <div class="product-card__desc">
+            Bookish stickers for laptops, bottles, journals.
+          </div>
+          <button class="btn-add-cart btn" data-add-to-cart data-id="sticker-pack" data-name="Reading Sticker Pack" data-price="4.99" type="button">Add to Cart</button>
+        </div>
+
+        <div class="product-card" id="supplies">
+          <div class="product-card__img">
+            <img src="assets/img/placeholder.svg" alt="Tote bag with ALL I DO IS READ READ READ." style="max-width:100%;height:auto;border-radius:inherit;" />
+          </div>
+          <div class="price-badge">$9.99</div>
+          <div class="product-card__title">ALL I DO IS READ Tote Bag</div>
+          <div class="product-card__desc">
+            Carry books, notebooks, and snacks with pride.
+          </div>
+          <button class="btn-add-cart btn" data-add-to-cart data-id="read-tote" data-name="ALL I DO IS READ READ READ Tote Bag" data-price="9.99" type="button">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+          <div class="product-card__img">
+            <img src="assets/img/placeholder.svg" alt="Hardcover Book Haven branded notebook." style="max-width:100%;height:auto;border-radius:inherit;" />
+          </div>
+          <div class="price-badge">$8.50</div>
+          <div class="product-card__title">Book Haven Notebook</div>
+          <div class="product-card__desc">
+            Hardcover, lined pages, bookstore-branded.
+          </div>
+          <button class="btn-add-cart btn" data-add-to-cart data-id="bh-notebook" data-name="Book Haven Notebook" data-price="8.50" type="button">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-inner">
+
+    <div class="footer-col">
+      <div class="footer-col-title">Stay in touch</div>
+      <form id="newsletter-form" class="newsletter-form" novalidate>
+        <label class="visually-hidden" for="newsletter-email">Email address</label>
+        <input
+          id="newsletter-email"
+          name="email"
+          type="email"
+          placeholder="Your email"
+          required
+          aria-required="true"
+        />
+        <button class="btn" type="submit">Subscribe</button>
+      </form>
+      <p class="footer-text" style="margin-top:0.75rem;">
+        We'll let you know about new arrivals, local events, and special offers.
+      </p>
+    </div>
+
+    <div class="footer-col">
+      <div class="footer-col-title">Visit us</div>
+      <p class="footer-text">
+        Book Haven Bookstore<br/>
+        123 Literary Lane<br/>
+        Readsville, USA<br/>
+        Mon–Fri 9 a.m.–8 p.m.
+      </p>
+      <p class="footer-text">
+        Call: (555) 123‑BOOK
+      </p>
+      <p class="footer-text">
+        Instagram / Facebook / X
+      </p>
+    </div>
+
+    <div class="footer-col">
+      <div class="footer-col-title">Browse</div>
+      <ul class="footer-nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="community.html">Community &amp; Events</a></li>
+      </ul>
+      <p class="footer-text" style="margin-top:1rem;font-size:0.8rem;">
+        © 2025 Book Haven Bookstore. All rights reserved.
+      </p>
+    </div>
+
+  </div>
+</footer>
+
+<!-- Cart Modal -->
+<div
+  id="cart-modal"
+  class="modal hidden"
+  aria-hidden="true"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="cart-title">
+  <div class="modal__backdrop" data-close="cart"></div>
+  <div class="modal__panel">
+    <div class="modal__header">
+      <h2 id="cart-title">Your Cart</h2>
+      <button class="modal__close" id="closeCartBtn" aria-label="Close cart">&times;</button>
+    </div>
+    <div class="modal__body" id="cart-items">
+      <!-- JS will render the cart table here -->
+      <p>Your cart is empty.</p>
+    </div>
+    <div class="modal__footer">
+      <button class="btn-outline btn" id="clearCartBtn" type="button">Clear Cart</button>
+      <button class="btn" id="processOrderBtn" type="button">Process Order</button>
+    </div>
+  </div>
+</div>
+<div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
