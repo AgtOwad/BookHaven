@@ -1,0 +1,62 @@
+# Dependency directories
+node_modules/
+jspm_packages/
+bower_components/
+
+# Build outputs
+dist/
+build/
+out/
+tmp/
+temp/
+.tmp/
+.temp/
+.parcel-cache/
+.cache/
+.vite/
+.nuxt/
+.next/
+.sass-cache/
+
+# Static site generators
+public/
+_site/
+.hugo_build.lock
+
+# Test and coverage artifacts
+coverage/
+.nyc_output/
+.pytest_cache/
+test-output/
+
+# Logs and diagnostics
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Environment and credential files
+.env
+.env.*
+!.env.example
+.envrc
+.pnp.*
+
+# Editor and tool metadata
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*.orig
+
+# Miscellaneous
+.eslintcache
+.stylelintcache
+.cache-loader/
+.gradle/
+.history/
+*.iml
+.fleet/
