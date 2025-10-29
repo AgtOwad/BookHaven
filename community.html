@@ -21,7 +21,8 @@
       class="mobile-menu-toggle"
       id="mobileMenuToggle"
       aria-label="Toggle navigation menu"
-      aria-expanded="false">
+      aria-expanded="false"
+      aria-controls="mobileNav">
       <span class="bar"></span>
     </button>
 
@@ -34,17 +35,17 @@
       </ul>
 
       <button
-        class="cart-button"
-        id="openCartBtn"
+        class="cart-button js-open-cart"
+        type="button"
         aria-haspopup="dialog"
         aria-controls="cart-modal">
         <span class="cart-button__icon" aria-hidden="true">🛒</span>
         <span class="cart-button__label">View Cart</span>
-        <span class="cart-button__badge" id="cart-count" aria-live="polite">0</span>
+        <span class="cart-button__badge js-cart-count" aria-live="polite">0</span>
       </button>
     </div>
 
-    <div class="mobile-drawer" id="mobileNav" hidden>
+    <div class="mobile-drawer" id="mobileNav" aria-hidden="true">
       <nav role="navigation" aria-label="Mobile Navigation">
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -54,12 +55,12 @@
         </ul>
       </nav>
       <button
-        class="drawer-cart-btn"
-        id="openCartBtn"
+        class="drawer-cart-btn js-open-cart"
+        type="button"
         aria-haspopup="dialog"
         aria-controls="cart-modal">
         🛒 View Cart
-        <span class="cart-button__badge" id="cart-count" aria-live="polite">0</span>
+        <span class="cart-button__badge js-cart-count" aria-live="polite">0</span>
       </button>
     </div>
   </div>
@@ -305,6 +306,7 @@
   </div>
 </div>
 <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+<script src="assets/js/gallery-images.js"></script>
 <script src="assets/js/main.js"></script>
 </body>
 </html>

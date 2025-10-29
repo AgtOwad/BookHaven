@@ -1,0 +1,27 @@
+<svg width="560" height="420" viewBox="0 0 560 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Books stacked beside a reading chair</title>
+  <desc id="desc">Illustration of a cozy chair, side table, lamp, and a stack of colorful books.</desc>
+  <rect width="560" height="420" rx="24" fill="#FFF7EE"/>
+  <rect x="32" y="48" width="240" height="320" rx="18" fill="#FFFFFF" stroke="#2E4057" stroke-width="4" opacity="0.2"/>
+  <rect x="280" y="96" width="240" height="240" rx="18" fill="#FFFFFF" stroke="#2E4057" stroke-width="4" opacity="0.15"/>
+  <g transform="translate(90 90)">
+    <path d="M40 220 Q36 200 48 184 L88 124 Q102 106 126 110 L174 120 Q190 124 198 140 Q208 160 200 188 L188 228" fill="#F7B3CC" stroke="#2E4057" stroke-width="4"/>
+    <path d="M64 210 L164 210 Q176 210 182 220 Q188 230 180 240 Q174 248 162 248 L74 248 Q58 248 52 236 Q44 220 64 210 Z" fill="#EE583F" stroke="#2E4057" stroke-width="4"/>
+    <path d="M84 132 L132 144 Q148 148 154 160 L164 182 Q170 194 160 202 L96 202 Q82 202 76 188 L70 164 Q64 140 84 132 Z" fill="#C7B65E" stroke="#2E4057" stroke-width="4"/>
+    <ellipse cx="132" cy="74" rx="36" ry="24" fill="#2E4057" opacity="0.2"/>
+  </g>
+  <g transform="translate(320 96)">
+    <rect x="0" y="140" width="40" height="120" rx="6" fill="#EE583F" stroke="#2E4057" stroke-width="4"/>
+    <rect x="44" y="110" width="40" height="150" rx="6" fill="#C7B65E" stroke="#2E4057" stroke-width="4"/>
+    <rect x="88" y="130" width="40" height="130" rx="6" fill="#F7B3CC" stroke="#2E4057" stroke-width="4"/>
+    <rect x="132" y="150" width="40" height="110" rx="6" fill="#2E4057" stroke="#2E4057" stroke-width="4"/>
+    <rect x="176" y="120" width="40" height="140" rx="6" fill="#C7B65E" stroke="#2E4057" stroke-width="4"/>
+    <rect x="0" y="110" width="216" height="16" rx="4" fill="#2E4057"/>
+    <rect x="36" y="26" width="144" height="48" rx="10" fill="#2E4057"/>
+    <circle cx="60" cy="50" r="8" fill="#C7B65E"/>
+    <circle cx="112" cy="50" r="8" fill="#F7B3CC"/>
+    <circle cx="164" cy="50" r="8" fill="#EE583F"/>
+    <rect x="36" y="0" width="12" height="48" fill="#C7B65E"/>
+    <rect x="168" y="0" width="12" height="48" fill="#C7B65E"/>
+  </g>
+</svg>

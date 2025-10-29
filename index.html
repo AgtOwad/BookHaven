@@ -21,7 +21,8 @@
       class="mobile-menu-toggle"
       id="mobileMenuToggle"
       aria-label="Toggle navigation menu"
-      aria-expanded="false">
+      aria-expanded="false"
+      aria-controls="mobileNav">
       <span class="bar"></span>
     </button>
 
@@ -34,17 +35,17 @@
       </ul>
 
       <button
-        class="cart-button"
-        id="openCartBtn"
+        class="cart-button js-open-cart"
+        type="button"
         aria-haspopup="dialog"
         aria-controls="cart-modal">
         <span class="cart-button__icon" aria-hidden="true">🛒</span>
         <span class="cart-button__label">View Cart</span>
-        <span class="cart-button__badge" id="cart-count" aria-live="polite">0</span>
+        <span class="cart-button__badge js-cart-count" aria-live="polite">0</span>
       </button>
     </div>
 
-    <div class="mobile-drawer" id="mobileNav" hidden>
+    <div class="mobile-drawer" id="mobileNav" aria-hidden="true">
       <nav role="navigation" aria-label="Mobile Navigation">
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -54,12 +55,12 @@
         </ul>
       </nav>
       <button
-        class="drawer-cart-btn"
-        id="openCartBtn"
+        class="drawer-cart-btn js-open-cart"
+        type="button"
         aria-haspopup="dialog"
         aria-controls="cart-modal">
         🛒 View Cart
-        <span class="cart-button__badge" id="cart-count" aria-live="polite">0</span>
+        <span class="cart-button__badge js-cart-count" aria-live="polite">0</span>
       </button>
     </div>
   </div>
@@ -78,7 +79,7 @@
         <a class="hero__cta" href="gallery.html">Browse Gallery</a>
       </div>
       <div class="hero__img-wrapper">
-        <img src="assets/img/placeholder.svg" alt="Stack of books and journals on display." />
+        <img src="assets/img/hero-reading.svg" alt="Illustrated reading chair beside tall stacks of books." />
       </div>
     </div>
   </section>
@@ -200,7 +201,10 @@
         <!-- Product 1 -->
         <div class="product-card">
           <div class="product-card__img">
-            <img src="assets/img/placeholder.svg" alt="Cover of 'Brie Mine 4Ever' romance book." style="max-width:100%;height:auto;border-radius:inherit;" />
+            <img
+              data-image-key="brie-mine"
+              alt="Book cover of Brie Mine 4Ever in mustard yellow with bold white lettering."
+              loading="lazy" />
           </div>
           <div class="price-badge">$14.99</div>
           <div class="product-card__title">Brie Mine 4Ever</div>
@@ -221,7 +225,10 @@
         <!-- Product 2 -->
         <div class="product-card">
           <div class="product-card__img">
-            <img src="assets/img/placeholder.svg" alt="Cover of 'Glory Riders' western adventure book." style="max-width:100%;height:auto;border-radius:inherit;" />
+            <img
+              data-image-key="glory-riders"
+              alt="Blue-toned cover design for the adventure novel Glory Riders."
+              loading="lazy" />
           </div>
           <div class="price-badge">$12.50</div>
           <div class="product-card__title">Glory Riders</div>
@@ -242,7 +249,10 @@
         <!-- Product 3 -->
         <div class="product-card">
           <div class="product-card__img">
-            <img src="assets/img/placeholder.svg" alt="A tote bag with the words ALL I DO IS READ READ READ." style="max-width:100%;height:auto;border-radius:inherit;" />
+            <img
+              data-image-key="read-tote"
+              alt="Beige tote bag printed with the phrase All I Do Is Read Read Read."
+              loading="lazy" />
           </div>
           <div class="price-badge">$9.99</div>
           <div class="product-card__title">ALL I DO IS READ Tote</div>
@@ -342,6 +352,7 @@
   </div>
 </div>
 <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+<script src="assets/js/gallery-images.js"></script>
 <script src="assets/js/main.js"></script>
 </body>
 </html>
