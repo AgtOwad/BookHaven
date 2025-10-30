@@ -13,7 +13,7 @@
 <header class="site-header">
   <div class="container site-header__inner">
     <a class="brand" href="index.html">
-      <img src="assets/img/logo.svg" alt="Book Haven Bookstore logo" class="brand__logo" />
+      <img src="assets/img/Inkwell%20Blue%20Logo.png" alt="Book Haven Bookstore logo" class="brand__logo" />
       <span class="brand__name">Book Haven Bookstore</span>
     </a>
 
@@ -81,192 +81,72 @@
         </button>
       </div>
 
-      <div class="gallery-table-wrapper">
-        <h2 class="h2" style="margin-top:0;">Product quick view</h2>
-        <table class="gallery-table" aria-describedby="gallery-summary">
-          <caption id="gallery-summary" class="visually-hidden">Summary of featured items, categories, and prices.</caption>
-          <thead>
-            <tr>
-              <th scope="col">Item</th>
-              <th scope="col">Category</th>
-              <th scope="col">Highlights</th>
-              <th scope="col">Price</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>TRAVEL Magazine</td>
-              <td>Magazines</td>
-              <td>Global destinations, inspiration</td>
-              <td>$6.99</td>
-            </tr>
-            <tr>
-              <td>EAT. Magazine</td>
-              <td>Magazines</td>
-              <td>Recipes and kitchen stories</td>
-              <td>$5.99</td>
-            </tr>
-            <tr>
-              <td>BALL Magazine</td>
-              <td>Magazines</td>
-              <td>Pickleball play &amp; training tips</td>
-              <td>$5.50</td>
-            </tr>
-            <tr>
-              <td>Brie Mine 4Ever</td>
-              <td>Books</td>
-              <td>Rom-com with cheese puns</td>
-              <td>$14.99</td>
-            </tr>
-            <tr>
-              <td>Glory Riders</td>
-              <td>Books</td>
-              <td>Frontier action adventure</td>
-              <td>$12.50</td>
-            </tr>
-            <tr>
-              <td>Sorcerer’s Shadowed Chronicles</td>
-              <td>Books</td>
-              <td>Epic fantasy rebellion</td>
-              <td>$16.00</td>
-            </tr>
-            <tr>
-              <td>Reading Sticker Pack</td>
-              <td>Journals &amp; Gifts</td>
-              <td>Four bookish sticker designs</td>
-              <td>$4.99</td>
-            </tr>
-            <tr>
-              <td>ALL I DO IS READ Tote Bag</td>
-              <td>Supplies</td>
-              <td>Canvas tote with bold graphic</td>
-              <td>$9.99</td>
-            </tr>
-            <tr>
-              <td>Book Haven Notebook</td>
-              <td>Journals</td>
-              <td>Hardcover, lined pages</td>
-              <td>$8.50</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div class="gallery-grid">
-        <!-- Magazines -->
-        <div class="product-card" id="magazines">
-          <div class="product-card__img">
-            <img src="assets/img/gallery/travel-mag.svg" alt="Illustrated cover of TRAVEL magazine with mountain scene." />
-          </div>
-          <div class="price-badge">$6.99</div>
-          <div class="product-card__title">TRAVEL Magazine</div>
-          <div class="product-card__desc">
-            Global adventures, destinations, and culture.
-          </div>
-          <button class="btn-add-cart btn" data-add-to-cart data-id="travel-mag" data-name="TRAVEL Magazine" data-price="6.99" type="button">Add to Cart</button>
+      <div class="filter-card" aria-labelledby="filter-heading">
+        <div class="filter-card__intro">
+          <h2 class="h2" id="filter-heading">Find your next read</h2>
+          <p class="body-text">
+            Narrow the shelves by category, price, or staff collection. Apply the filters to refresh the grid or clear them to start over.
+          </p>
         </div>
-
-        <div class="product-card">
-          <div class="product-card__img">
-            <img src="assets/img/gallery/eat-mag.svg" alt="Illustrated cover of EAT. magazine with a bowl graphic." />
+        <form id="galleryFilters" class="filters-form" novalidate>
+          <div class="filters-grid">
+            <div class="filter-field">
+              <label class="filter-label" for="filter-category">Category</label>
+              <select id="filter-category" name="category">
+                <option value="all">All categories</option>
+                <option value="Magazines">Magazines</option>
+                <option value="Books">Books</option>
+                <option value="Journals &amp; Gifts">Journals &amp; Gifts</option>
+                <option value="Supplies">Supplies</option>
+              </select>
+            </div>
+            <div class="filter-field">
+              <label class="filter-label" for="filter-price">Price range</label>
+              <select id="filter-price" name="price">
+                <option value="all">All price points</option>
+                <option value="low">Under $7</option>
+                <option value="mid">$7 &ndash; $12</option>
+                <option value="high">Above $12</option>
+              </select>
+            </div>
+            <div class="filter-field">
+              <label class="filter-label" for="filter-collection">Collection</label>
+              <select id="filter-collection" name="collection">
+                <option value="all">All collections</option>
+                <option value="new">New Arrivals</option>
+                <option value="staff">Staff Picks</option>
+                <option value="bestseller">Bestsellers</option>
+              </select>
+            </div>
           </div>
-          <div class="price-badge">$5.99</div>
-          <div class="product-card__title">EAT. Magazine</div>
-          <div class="product-card__desc">
-            Bold recipes, street food, and kitchen stories.
+          <div class="filter-actions">
+            <button class="btn" type="submit">Apply Filters</button>
+            <button class="btn-outline" type="button" id="clearFiltersBtn">Clear Filters</button>
           </div>
-          <button class="btn-add-cart btn" data-add-to-cart data-id="eat-mag" data-name="EAT. Magazine" data-price="5.99" type="button">Add to Cart</button>
-        </div>
-
-        <div class="product-card">
-          <div class="product-card__img">
-            <img src="assets/img/gallery/ball-mag.svg" alt="Illustrated cover of BALL magazine with pickleball graphic." />
-          </div>
-          <div class="price-badge">$5.50</div>
-          <div class="product-card__title">BALL Magazine</div>
-          <div class="product-card__desc">
-            Sports, hustle, and behind-the-scenes grit.
-          </div>
-          <button class="btn-add-cart btn" data-add-to-cart data-id="ball-mag" data-name="BALL Magazine" data-price="5.50" type="button">Add to Cart</button>
-        </div>
-
-        <!-- Books -->
-        <div class="product-card" id="books">
-          <div class="product-card__img">
-            <img src="assets/img/gallery/brie-mine.svg" alt="Cover art for Brie Mine 4Ever showing a cheese heart." />
-          </div>
-          <div class="price-badge">$14.99</div>
-          <div class="product-card__title">Brie Mine 4Ever</div>
-          <div class="product-card__desc">
-            A funny, feel-good romance.
-          </div>
-          <button class="btn-add-cart btn" data-add-to-cart data-id="brie-mine" data-name="Brie Mine 4Ever" data-price="14.99" type="button">Add to Cart</button>
-        </div>
-
-        <div class="product-card">
-          <div class="product-card__img">
-            <img src="assets/img/gallery/glory-riders.svg" alt="Cover art for Glory Riders with riders silhouettes." />
-          </div>
-          <div class="price-badge">$12.50</div>
-          <div class="product-card__title">Glory Riders</div>
-          <div class="product-card__desc">
-            Western action and outlaw drama.
-          </div>
-          <button class="btn-add-cart btn" data-add-to-cart data-id="glory-riders" data-name="Glory Riders" data-price="12.50" type="button">Add to Cart</button>
-        </div>
-
-        <div class="product-card">
-          <div class="product-card__img">
-            <img src="assets/img/gallery/sorcerer-chronicles.svg" alt="Cover art for Sorcerer’s Shadowed Chronicles with magical moon." />
-          </div>
-          <div class="price-badge">$16.00</div>
-          <div class="product-card__title">Sorcerer’s Shadowed Chronicles</div>
-          <div class="product-card__desc">
-            Dark magic, fate, and rebellion.
-          </div>
-          <button class="btn-add-cart btn" data-add-to-cart data-id="sorcerer-chronicles" data-name="Sorcerer’s Shadowed Chronicles" data-price="16.00" type="button">Add to Cart</button>
-        </div>
-
-        <!-- Journals / Supplies -->
-        <div class="product-card" id="journals">
-          <div class="product-card__img">
-            <img src="assets/img/gallery/sticker-pack.svg" alt="Reading-themed stickers pack illustration." />
-          </div>
-          <div class="price-badge">$4.99</div>
-          <div class="product-card__title">Reading Sticker Pack</div>
-          <div class="product-card__desc">
-            Bookish stickers for laptops, bottles, journals.
-          </div>
-          <button class="btn-add-cart btn" data-add-to-cart data-id="sticker-pack" data-name="Reading Sticker Pack" data-price="4.99" type="button">Add to Cart</button>
-        </div>
-
-        <div class="product-card" id="supplies">
-          <div class="product-card__img">
-            <img src="assets/img/gallery/read-tote.svg" alt="Tote bag labeled All I Do Is Read Read Read." />
-          </div>
-          <div class="price-badge">$9.99</div>
-          <div class="product-card__title">ALL I DO IS READ Tote Bag</div>
-          <div class="product-card__desc">
-            Carry books, notebooks, and snacks with pride.
-          </div>
-          <button class="btn-add-cart btn" data-add-to-cart data-id="read-tote" data-name="ALL I DO IS READ READ READ Tote Bag" data-price="9.99" type="button">Add to Cart</button>
-        </div>
-
-        <div class="product-card">
-          <div class="product-card__img">
-            <img src="assets/img/gallery/notebook.svg" alt="Hardcover notebook with Book Haven branding." />
-          </div>
-          <div class="price-badge">$8.50</div>
-          <div class="product-card__title">Book Haven Notebook</div>
-          <div class="product-card__desc">
-            Hardcover, lined pages, bookstore-branded.
-          </div>
-          <button class="btn-add-cart btn" data-add-to-cart data-id="bh-notebook" data-name="Book Haven Notebook" data-price="8.50" type="button">Add to Cart</button>
-        </div>
+          <p class="filter-results" id="galleryResultsCount" aria-live="polite"></p>
+        </form>
       </div>
     </div>
   </section>
+
+  <section class="section section--bordered">
+    <div class="container">
+      <div class="section-heading">
+        <h2 class="h2">Featured categories</h2>
+      </div>
+      <div class="category-showcase" id="categoryShowcase" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="gallery-grid" id="productGrid" aria-live="polite"></div>
+      <div class="pagination hidden" id="galleryPagination" role="navigation" aria-label="Product results pages"></div>
+    </div>
+  </section>
 </main>
+
+
 <footer class="site-footer">
   <div class="container footer-inner">
 
