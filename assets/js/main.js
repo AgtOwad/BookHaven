@@ -518,7 +518,6 @@
   var paginationEl = qs("#galleryPagination");
   var filtersForm = qs("#galleryFilters");
   var clearFiltersBtn = qs("#clearFiltersBtn");
-  var categoryShowcaseEl = qs("#categoryShowcase");
 
   var galleryState = {
     filters: { category: "all", price: "all", collection: "all" },
@@ -533,15 +532,11 @@
     galleryState.filtered = getFilteredProducts(galleryState.filters);
     galleryState.currentPage = 1;
 
-    renderCategoryShowcase();
     renderGalleryView();
 
     filtersForm.addEventListener("submit", handleFilterSubmit);
     if (clearFiltersBtn) {
       clearFiltersBtn.addEventListener("click", handleClearFilters);
-    }
-    if (categoryShowcaseEl) {
-      categoryShowcaseEl.addEventListener("click", handleCategoryClick);
     }
   }
 
@@ -557,26 +552,6 @@
     if (!filtersForm) return;
     filtersForm.reset();
     galleryState.filters = { category: "all", price: "all", collection: "all" };
-    galleryState.currentPage = 1;
-    galleryState.filtered = getFilteredProducts(galleryState.filters);
-    renderGalleryView();
-  }
-
-  function handleCategoryClick(e) {
-    var card = e.target.closest(".category-card");
-    if (!card) return;
-    var category = card.getAttribute("data-category");
-    if (!category) return;
-
-    if (filtersForm) {
-      filtersForm.reset();
-      var categorySelect = qs("#filter-category");
-      if (categorySelect) {
-        categorySelect.value = category;
-      }
-    }
-
-    galleryState.filters = readFiltersFromForm();
     galleryState.currentPage = 1;
     galleryState.filtered = getFilteredProducts(galleryState.filters);
     renderGalleryView();
@@ -768,34 +743,6 @@
     if (key === "mid") return "$7 to $12";
     if (key === "high") return "above $12";
     return "";
-  }
-
-  function renderCategoryShowcase() {
-    if (!categoryShowcaseEl) return;
-
-    var categories = ["Magazines", "Books", "Journals & Gifts", "Supplies"];
-    var cards = categories.map(function (category) {
-      var items = PRODUCT_DATA.filter(function (product) {
-        return product.category === category;
-      });
-      if (!items.length) return "";
-      var randomIndex = Math.floor(Math.random() * items.length);
-      var pick = items[randomIndex];
-
-      return (
-        '<button type="button" class="category-card" data-category="' + category + '">' +
-          '<div class="category-card__img">' +
-            '<img src="' + pick.image + '" alt="' + escapeHtml(pick.alt) + '" />' +
-          "</div>" +
-          '<div class="category-card__body">' +
-            '<h3 class="category-card__title">' + escapeHtml(category) + "</h3>" +
-            '<p class="category-card__meta">' + items.length + (items.length === 1 ? " item" : " items") + " featured</p>" +
-          "</div>" +
-        "</button>"
-      );
-    }).filter(Boolean).join("");
-
-    categoryShowcaseEl.innerHTML = cards;
   }
 
   // ---------- ADD TO CART BUTTONS ----------
