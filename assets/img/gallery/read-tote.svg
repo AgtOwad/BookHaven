@@ -1,0 +1,11 @@
+<svg width="280" height="360" viewBox="0 0 280 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">ALL I DO IS READ tote bag</title>
+  <desc id="desc">Canvas tote bag with bold typography.</desc>
+  <rect width="280" height="360" rx="18" fill="#FFF7EE" stroke="#2E4057" stroke-width="6"/>
+  <path d="M80 96 Q84 54 120 44 Q140 38 160 44 Q196 54 200 96" fill="none" stroke="#2E4057" stroke-width="6"/>
+  <rect x="64" y="96" width="152" height="208" rx="12" fill="#FFFFFF" stroke="#2E4057" stroke-width="6"/>
+  <text x="84" y="156" font-family="Arial" font-weight="700" font-size="20" fill="#2E4057">ALL I DO</text>
+  <text x="84" y="196" font-family="Arial" font-weight="700" font-size="24" fill="#2E4057">IS READ</text>
+  <text x="84" y="236" font-family="Arial" font-weight="700" font-size="24" fill="#2E4057">READ READ</text>
+  <rect x="96" y="268" width="88" height="16" rx="8" fill="#C7B65E" opacity="0.7"/>
+</svg>

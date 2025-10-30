@@ -1,0 +1,11 @@
+<svg width="280" height="360" viewBox="0 0 280 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">EAT. magazine cover</title>
+  <desc id="desc">Minimal magazine cover with bowl illustration for a food publication.</desc>
+  <rect width="280" height="360" rx="18" fill="#FFFFFF" stroke="#2E4057" stroke-width="6"/>
+  <rect x="32" y="56" width="216" height="272" rx="12" fill="#F7B3CC" opacity="0.35"/>
+  <text x="48" y="120" font-family="Arial" font-weight="700" font-size="52" fill="#2E4057">EAT.</text>
+  <circle cx="140" cy="218" r="72" fill="#FFF7EE" stroke="#2E4057" stroke-width="6"/>
+  <path d="M84 218 C96 204 112 194 140 194 C168 194 184 204 196 218" fill="none" stroke="#2E4057" stroke-width="6" stroke-linecap="round"/>
+  <rect x="88" y="260" width="104" height="10" rx="5" fill="#2E4057"/>
+  <text x="56" y="156" font-family="Comfortaa" font-size="18" fill="#2E4057">Bold flavors, home cooking</text>
+</svg>

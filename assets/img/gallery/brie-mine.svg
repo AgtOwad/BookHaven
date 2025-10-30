@@ -1,0 +1,10 @@
+<svg width="280" height="360" viewBox="0 0 280 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Brie Mine 4Ever book cover</title>
+  <desc id="desc">Romance novel cover with cheese heart illustration.</desc>
+  <rect width="280" height="360" rx="18" fill="#F7B3CC"/>
+  <rect x="30" y="36" width="220" height="288" rx="16" fill="#FFF7EE" opacity="0.65"/>
+  <path d="M140 134 C170 100 218 128 200 176 C188 212 156 240 140 256 C124 240 92 212 80 176 C62 128 110 100 140 134 Z" fill="#C7B65E" stroke="#2E4057" stroke-width="5"/>
+  <circle cx="140" cy="168" r="14" fill="#EE583F" opacity="0.85"/>
+  <text x="52" y="308" font-family="Arial" font-weight="700" font-size="36" fill="#2E4057">Brie Mine</text>
+  <text x="84" y="336" font-family="Comfortaa" font-size="20" fill="#2E4057">4Ever</text>
+</svg>
