@@ -60,3 +60,7 @@ Thumbs.db
 .history/
 *.iml
 .fleet/
+
+# Generated assets
+screenshots/*.png
+screenshots/*.jpg
